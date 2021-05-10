@@ -17,17 +17,13 @@ namespace Typerr2
         {
             InitializeComponent();
 
-
-           
-         /*   this.FormClosed +=
-          new System.Windows.Forms.FormClosedEventHandler(this.LoadGame); */
         }
 
 
 
         private void LoadGame(object sender, EventArgs e)
         {
-            (new GameScreen()).Show(); this.Hide(); // elrejti az első Formot és megjeleníti a másodikat
+            (new GameScreen()).Show(); this.Hide(); 
 
 
         }

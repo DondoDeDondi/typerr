@@ -18,10 +18,11 @@ namespace Typerr2
 
 
         private SoundPlayer hangeffekt;
-        string[] szavak = File.ReadAllLines("szavak2.txt");
+        string[] szavak = File.ReadAllLines("szavak2.txt"); // Beolvassa a txt fájlt a szavak stringbe
 
         Random rnd = new Random();
 
+        ToolTip figyelmeztet = new ToolTip();
 
         int helyes = 0;
         int helytelen = 0;
@@ -30,9 +31,9 @@ namespace Typerr2
 
             InitializeComponent();
 
-            this.Load += new System.EventHandler(this.GameScreen_Load);
+            //this.Load += new System.EventHandler(this.GameScreen_Load);  Jelenleg nincs szükség rá
             hangeffekt = new SoundPlayer("keysfx.wav");
-            labelszo.Text = szavak[rnd.Next(0, szavak.Length)];
+            labelszo.Text = szavak[rnd.Next(0, szavak.Length)]; // Kiválaszt egy szót véletlenszerűen a txt fájlból
 
 
         }
@@ -42,7 +43,6 @@ namespace Typerr2
 
             if (e.KeyCode == Keys.Enter)                                // Enter leütéskor ellenőrzi, hogy a begépelt szó helyes-e.
             {
-
 
                 if (textBox1.Text == labelszo.Text)
                 {
@@ -77,16 +77,15 @@ namespace Typerr2
         {
 
             this.WindowState = FormWindowState.Maximized;
-            //hangeffekt.LoadAsync();
+            
         }
 
-        ToolTip figyelmeztet = new ToolTip();
+   
         public void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //  hangeffekt.PlaySync();
 
 
-            if (Control.IsKeyLocked(Keys.CapsLock))
+            if (Control.IsKeyLocked(Keys.CapsLock)) // Hibaüzenet CAPS LOCK bekapcsolva
             {
 
                 figyelmeztet.ToolTipTitle = "CAPS LOCK bekapcsolva!!!";
@@ -112,7 +111,14 @@ namespace Typerr2
             if (e.KeyCode == Keys.Enter)
             {
                 e.Handled = true;
+                e.SuppressKeyPress = true; // Eltünteti a beep hangot ENTER leütésekor
+                hangeffekt.Stop();
+            }
+            if (e.KeyCode == Keys.Escape)
+            {
+                e.Handled = true;
                 e.SuppressKeyPress = true;                              // Eltünteti a beep hangot ENTER leütésekor
+                hangeffekt.Stop();
             }
         }
        

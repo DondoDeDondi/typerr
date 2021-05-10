@@ -27,3 +27,18 @@ D:\VS codes\Typerr2 másolata\Typerr2\obj\Debug\Typerr2.exe.manifest
 D:\VS codes\Typerr2 másolata\Typerr2\obj\Debug\Typerr2.application
 D:\VS codes\Typerr2 másolata\Typerr2\obj\Debug\Typerr2.exe
 D:\VS codes\Typerr2 másolata\Typerr2\obj\Debug\Typerr2.pdb
+D:\VS codes\Typerr2_finished\Typerr2\bin\Debug\Typerr2.exe.config
+D:\VS codes\Typerr2_finished\Typerr2\bin\Debug\Typerr2.exe.manifest
+D:\VS codes\Typerr2_finished\Typerr2\bin\Debug\Typerr2.application
+D:\VS codes\Typerr2_finished\Typerr2\bin\Debug\Typerr2.exe
+D:\VS codes\Typerr2_finished\Typerr2\bin\Debug\Typerr2.pdb
+D:\VS codes\Typerr2_finished\Typerr2\obj\Debug\Typerr2.Form1.resources
+D:\VS codes\Typerr2_finished\Typerr2\obj\Debug\Typerr2.GameScreen.resources
+D:\VS codes\Typerr2_finished\Typerr2\obj\Debug\Typerr2.Properties.Resources.resources
+D:\VS codes\Typerr2_finished\Typerr2\obj\Debug\Typerr2.csproj.GenerateResource.cache
+D:\VS codes\Typerr2_finished\Typerr2\obj\Debug\Typerr2.csproj.CoreCompileInputs.cache
+D:\VS codes\Typerr2_finished\Typerr2\obj\Debug\Typerr2.exe.manifest
+D:\VS codes\Typerr2_finished\Typerr2\obj\Debug\Typerr2.application
+D:\VS codes\Typerr2_finished\Typerr2\obj\Debug\Typerr2.exe
+D:\VS codes\Typerr2_finished\Typerr2\obj\Debug\Typerr2.pdb
+D:\VS codes\Typerr2_finished\Typerr2\obj\Debug\Typerr2.csprojAssemblyReference.cache
